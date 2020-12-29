@@ -529,10 +529,10 @@ b i:last-child {
 }
 
 
-/* text rotate */
+/* text rotate 130 */
 
 .box-headline {
-    font-size: 130px;
+    font-size: 9.5vw;
     line-height: 1.0;
 }
 
