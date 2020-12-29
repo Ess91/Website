@@ -892,11 +892,22 @@ footer img {
 /* About page
 ==================================================*/
 
-.top-bar {
+/*.top-bar {
     color: #333;
     padding: 150px 0 150px;
     background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
     background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}*/
+
+.top-bar {
+    color: #333;
+    padding: 150px 0 150px;
+    background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/alexandru-acea-XEB8y0nRRP4-unsplash.jpg);
+    background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/alexandru-acea-XEB8y0nRRP4-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -907,7 +918,7 @@ footer img {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #999;
+    color: #808080;
     line-height: 50px;
 }
 
