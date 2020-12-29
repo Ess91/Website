@@ -1196,6 +1196,15 @@ blockquote {
     font-weight: bold;
 }
 
+
+/*.box:nth-child(1) {
+    order: 1;
+}
+
+.box:nth-child(2) {
+    order: 2;
+}*/
+
 /* Blog Pages
 ==================================================*/
 
