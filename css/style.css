@@ -942,7 +942,7 @@ footer img {
 
 
 
-/* Services page
+/* Blog page
 ==================================================*/
 
 .size-50 {
@@ -1206,6 +1206,10 @@ blockquote {
     color: #A2A2A2;
     font-weight: bold;
 }
+
+/* Services section
+==================================================*/
+
 
 
 /*.box:nth-child(1) {
