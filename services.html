@@ -15,7 +15,7 @@
 
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
-
+    <script src="js/index.js"></script>
 
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
@@ -29,6 +29,7 @@
     <script src="https://kit.fontawesome.com/e065ef4b65.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -98,10 +99,11 @@
 
 
 
-        <div class="col-md-10">
 
 
-            <section>
+
+        <section>
+            <div class="col-md-10">
                 <h5> Web Development &nbsp; <i class="fas fa-code" style="color: #ffbf00; font-size: 25px;"></i></h5>
                 <p>Whether it's a website for your small business, an e-commerce website or simply
                     something unique we’ve
@@ -125,28 +127,129 @@
                     website is met.</p>
                 <br>
 
-                <p style="text-align: center;">
+                <p style="text-align: center; padding-bottom:  5%;">
                     Get in touch:<br>
                     Through our <a href="./contact.html">contact page</a> or by <a
                         href="mailto:info@estherboateng.co.uk">email</a>
 
                 </p>
 
+            </div>
+
+        </section><br><br>
+
+
+        <div class="hero">
+            <h1 style="text-transform: capitalize;">Our Clients.. </h1>
+
+            <div class="review-box">
+                <div id="slide">
+                    <div class="card">
+                        <div class="profile">
+                            <img src="img/testi/Facebook Profile Image.jpg" alt="">
+                            <div>
+                                <h3>Esther Blessed</h3>
+                                <!-- <p>Esther Blessed</p> -->
+                            </div>
+
+                        </div>
+                        <p>Working with Esther has been an absolute pleasure from start to finish. She has an abundance
+                            of patience, which was much needed for this project. We were very pedantic and peculiar
+                            regarding the ideas we wanted for our website. It was a major rebranding project, but Esther
+                            diligently worked with us throughout the process. She was also very willing to listen to our
+                            feedback and offer different solutions, some that we hadn’t considered but have taken on her
+                            ideas that added extra value to the project. Very glad we had the opportunity to have had
+                            Esther on the project!</p>
+                    </div>
 
 
 
-            </section>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="img/testi/sos.png" alt="">
+                            <div>
+                                <h3>SOS Security</h3>
+                                <!-- <p>Web Developer</p> -->
+                            </div>
+
+                        </div>
+                        <p>Been working with Esther for just over 3 months, she has designed company brochures,
+                            proposals and other documents. I have found her to be very patient, excellent communicator
+                            and work is second to none.
+                            I will definitely recommend her services to others
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="profile">
+                            <img src="img/IMG_1729.jpg" alt="">
+                            <div>
+                                <h3>Troy Boateng</h3>
+                                <p>Web Developer</p>
+                            </div>
+
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptates qui nam corrupti
+                            quod architecto quisquam, at, deserunt non repellat accusamus nulla soluta nihil tempore
+                            aliquid placeat mollitia sit amet?</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="profile">
+                            <img src="img/IMG_1729.jpg" alt="">
+                            <div>
+                                <h3>Charles Boateng</h3>
+                                <p>Web Developer</p>
+                            </div>
+
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptates qui nam corrupti
+                            quod architecto quisquam, at, deserunt non repellat accusamus nulla soluta nihil tempore
+                            aliquid placeat mollitia sit amet?</p>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="sidebar">
+                    <img src="img/up.svg" alt="" id="upArrow">
+                    <img src="img/down.svg" alt="" id="downArrow">
+                </div>
+            </div>
         </div>
 
-
-        <div class="testimonals">
-
-          
-
-
-
-        </div>
     </div>
+
+
+    <script>
+        var slide = document.getElementById("slide");
+        var upArrow = document.getElementById("upArrow");
+        var downArrow = document.getElementById("downArrow");
+
+        let x = 0;
+
+        upArrow.onclick = function () {
+            if (x > "-900") {
+                x = x - 300;
+                slide.style.top = x + "px";
+            }
+        }
+
+        downArrow.onclick = function () {
+            if (x < 0) {
+                x = x + 300;
+                slide.style.top = x + "px";
+            }
+        }
+
+    </script>
+
+
+
+
+
 
 
 
@@ -182,17 +285,17 @@
 
     <!-- google analytics  -->
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-76796224-1', 'auto');
         ga('send', 'pageview');
