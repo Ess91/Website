@@ -1172,18 +1172,20 @@ blockquote {
 
 .hero {
     width: 100%;
-    height: 100hv;
+    height: 100vh;
     /* background-color: #f6fbff; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
 }
 
 .hero h1 {
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     margin-bottom: 80px;
+    text-align: center;
 }
 
 .hero h1::after {
@@ -1205,9 +1207,10 @@ blockquote {
     box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.25);
     position: relative;
     overflow: hidden;
+    display: flex;
 }
 
-.card {
+.review-box .card {
     height: 300px;
     padding: 40px;
     color: #000;
@@ -1218,14 +1221,14 @@ blockquote {
     z-index: 1;
 }
 
-.card p {
-    font-size: 12px;
+.review-box .card p {
+    font-size: 1vw;
 }
 
 .profile {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 17px;
 }
 
 .profile img {
@@ -1291,8 +1294,28 @@ blockquote {
 
 ::selection {
     background: #F5B700;
-    color: #000;
+    color: #000000;
 }
+
+@media screen and (max-width: 701px) {
+
+    .review-box .card p {
+        font-size: 14px;
+    }
+    .review-box {
+        max-width: 100%;
+    }
+
+}
+
+@media  screen and (min-width: 1519px) {
+    .review-box .card p {
+        font-size: 0.55vw;
+    }
+}
+
+
+
 
 /* Blog Pages
 ==================================================*/
