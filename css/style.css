@@ -1167,12 +1167,25 @@ blockquote {
     font-weight: bold;
 }
 
+/* Services section
+==================================================*/
+section .services {
+    font-size: 14px;
+    text-align: center;
+   align-items: center;
+
+}
+section .services-info h5 {
+    font-size: 18px;
+    text-align: center;
+}
+
 /* Testimonials section
 ==================================================*/
 
 .hero {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: #f6fbff; */
     display: flex;
     flex-direction: column;
